@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get CRUD</title>
+</head>
+<!-- <script>
+    table, 
+    th, 
+    td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+</script> -->
+<body>
+    <table style="width:100%">
+        <tr>
+          <th>Company</th>
+          <th>Contact</th>
+          <th>Country</th>
+        </tr>
+        <tr>
+          <td>Alfreds Futterkiste</td>
+          <td>Maria Anders</td>
+          <td>Germany</td>
+        </tr>
+        <% for(let i=0; i < dataTable.length; i++) { %>
+            <tr>
+              <td><%= dataTable[i].email %></td>
+              <td><%= dataTable[i].name %></td>
+              <td><%= dataTable[i].password %></td>
+            </tr>
+         <% } %>
+    </table>
+</body>
+</html>
