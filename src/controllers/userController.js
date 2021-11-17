@@ -21,7 +21,7 @@ let handleLogin = async (req, res) => {
 }
 
 let handleGetAllUsers = async (req, res) => {
-    let id = req.body.id
+    let id = req.query.id
 
     if(!id) {
         return res.status(200).json({
@@ -44,8 +44,15 @@ let handleCreateNewUser = async (req, res) => {
     return res.status(200).json(message)
 }
 
+let handleEditUser = async (req, res) => {
+    let data = req.body
+    let message = await userService.updateUserData(data)
+    return res.status(200).json(message)
+}
+
 module.exports = {
     handleLogin: handleLogin,
     handleGetAllUsers: handleGetAllUsers,
-    handleCreateNewUser: handleCreateNewUser
+    handleCreateNewUser: handleCreateNewUser,
+    handleEditUser: handleEditUser
 }

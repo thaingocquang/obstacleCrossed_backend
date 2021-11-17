@@ -17,7 +17,8 @@ initWebRoutes(app)
 
 connectDB()
 
-let port = process.env.PORT || 6969
+// let port = process.env.PORT || 6969
+let port = 8081
 
 app.listen(port, () => {
     console.log("Backend is running on the port : " + port)

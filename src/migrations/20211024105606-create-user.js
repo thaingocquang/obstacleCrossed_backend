@@ -26,6 +26,9 @@ module.exports = {
       role: {
         type: Sequelize.BOOLEAN
       },
+      score: {
+        type: Sequelize.INTEGER
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE

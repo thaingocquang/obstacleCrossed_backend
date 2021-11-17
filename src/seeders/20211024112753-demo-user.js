@@ -9,6 +9,7 @@ module.exports = {
       age: 20,
       password: 123456,
       role: true,
+      score: 0,
       createdAt: new Date(),
       updatedAt: new Date()
     }]);
