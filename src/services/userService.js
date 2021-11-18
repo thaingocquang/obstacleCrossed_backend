@@ -160,6 +160,7 @@ let updateUserData = (data) => {
                 user.username = data.username
                 user.gender = data.gender
                 user.age = data.age
+                user.email = data.email
                 user.score = data.score
                 await user.save()
                 resolve({
